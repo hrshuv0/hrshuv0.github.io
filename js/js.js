@@ -3,7 +3,7 @@
 
 
 window.onload = function(){
-    bool_about     = false;
+    bool_about     = true;
     bool_expertise = false;
     bool_experience= false;
     bool_project   = false;
@@ -116,13 +116,6 @@ function check_view()
     }
     
 
- 
-
-    
-
-    
-
-
 
 
 }
@@ -132,3 +125,38 @@ function check_view()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.slick-container').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    centerMode: false,
+    variableWidth: true
+  });

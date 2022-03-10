@@ -2,8 +2,8 @@
 .grid-box{
 	width: 250px;
 	height: 350px;;
-	background-color: rgb(217, 224, 224) !important;
-	margin: 10px;
+	background-color: rgb(255, 255, 255) !important;
+	margin: 15px;
 	border: 2px;
 	border-color: rgb(248, 248, 248);
 	border-style: solid;
@@ -13,7 +13,7 @@
 
 
 .slick-container{
-	margin-left: 100px;
+	margin-left: 150px;
 	margin-right: 50px;
 }
 
@@ -42,17 +42,51 @@
 	box-shadow: 3px 3px 3px rgb(165, 162, 162), 0 0 25px rgb(143, 143, 143);
 	
 }
-
+.image-box img{
+	height: 120px;
+	width: 135px;
+	align-items: center;
+	margin: auto;
+}
 .name-box{
 	width: 100%;
-	height: 30%;
-	background-color: rgb(139, 137, 133);
+	height: 20%;
+	/* background-color: rgb(139, 137, 133); */
+	margin-bottom: 10px;
 }
 
 .name-box h1{
 	text-align: center;
 	font-size: 30px;
+	color: #000;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .name-box h5{
 	text-align: center;
+	color: #000;
+	opacity: .8;
+	font-size: 16px;
+	font-style:italic;
+}
+.details-box p{
+	font-size: 15px;
+	color: #000;
+}
+
+.contact-details{
+	color: rgb(66, 156, 168);
+	text-align: center;
+	
+}
+.contact-body a{
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: 'Smooch Sans', sans-serif;
+}
+
+.contact-body i{
+	margin-right: 5px;
+	color: #5acbd3;
 }

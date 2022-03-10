@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+
 body{
     background-color: rgb(0, 0, 0) !important; 
     /* src: url("/asset/bg_1.jpg"); */
@@ -22,7 +24,7 @@ nav {
 nav a {
     position: relative;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 14px;
     outline: 0;
     text-decoration: none;
     text-transform: uppercase;

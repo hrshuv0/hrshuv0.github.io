@@ -156,7 +156,7 @@ $('.slick-container').slick({
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 2,
     centerMode: false,
     variableWidth: true
   });

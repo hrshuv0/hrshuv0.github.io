@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Smooch+Sans&display=swap');
 body{
     background-color: rgb(0, 0, 0) !important; 
     /* src: url("/asset/bg_1.jpg"); */
-    background-image: url("/asset/bg_1.jpg");
+    background-image: url("/asset/bg_4.jpg");
+    background-size: 100%;
     /* text-rendering: optimizeLegibility !important;     */
 }
 

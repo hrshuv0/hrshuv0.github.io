@@ -3,10 +3,10 @@
 
 
 window.onload = function(){
-    bool_about     = true;
+    bool_about     = false;
     bool_expertise = false;
     bool_experience= false;
-    bool_project   = false;
+    bool_project   = true;
     check_view();
 }
 
@@ -156,7 +156,7 @@ $('.slick-container').slick({
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 3,
     centerMode: false,
     variableWidth: true
   });

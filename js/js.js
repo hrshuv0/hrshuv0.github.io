@@ -6,7 +6,9 @@ window.onload = function(){
     bool_about     = false;
     bool_expertise = false;
     bool_experience= false;
-    bool_project   = true;
+    bool_project   = false;
+    bool_myname    = true;
+
     check_view();
 }
 
@@ -14,6 +16,7 @@ nav_about      = document.getElementById("nav_about")
 nav_expertise  = document.getElementById("nav_expertise")
 nav_experience = document.getElementById("nav_experience")
 nav_project    =document.getElementById("nav_project")
+myname         = document.getElementById("myname");
 
 
 
@@ -25,6 +28,7 @@ nav_about.onclick = function(){
         bool_expertise = false;
         bool_experience= false;
         bool_project   = false;
+
         check_view();        
     }
     catch (error) {
@@ -44,7 +48,6 @@ nav_expertise.onclick = function(){
         bool_project   = false;
 
         check_view();
-        console.log(bool_expertise);
     } 
     catch (error) {
         alert(error)
@@ -114,6 +117,25 @@ function check_view()
     }else{
         Project.style.display = "none";
     }
+
+
+    if(bool_about == false && bool_experience == false && 
+        bool_expertise == false && bool_project == false){
+            bool_myname = true;
+        }
+        else{
+            bool_myname = false;
+        }
+    if(bool_myname)
+    {
+        myname.style.display = "";
+    }
+    else
+    {
+        myname.style.display = "none";
+    }
+
+    console.log(bool_myname);
     
 
 
@@ -156,7 +178,7 @@ $('.slick-container').slick({
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 2,
     centerMode: false,
     variableWidth: true
   });

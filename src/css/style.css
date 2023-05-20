@@ -104,6 +104,69 @@ input{
     display: grid;
 }
 
+/* ========== Header  ========== */
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav{
+    height: calc(var(--header-height) + 0.885rem);
+    display: flex;
+}
+
+.nav__list{
+    display: flex;
+    column-gap: 3.25rem;
+}
+
+.nav__link{
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: var(--bold);
+    font-family: var(--mono-font);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav__link:hover{
+    opacity: 0.5;
+}
+
+.vav__link::after{
+    content: '';    
+    position: absolute;
+    bottom: 0;
+    right: -0.5rem;
+    width: 7px;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav__link:hover::after{
+    opacity: 1;
+}
+
+.nav__close,
+.nav__toggle{
+    display: none;
+}
+
+/* ========== Active Link ========== */
+.active-link{
+    opacity: 0.5;
+}
+
+.active-link::after{
+    opacity: 1;
+}
+
 /* ========== Home ========== */
 .home{
     background: url('../img/home/bg_1.jpg');
